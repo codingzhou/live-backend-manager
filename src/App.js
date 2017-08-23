@@ -7,7 +7,7 @@ import authClient from './authClient';
 import myJsonServerClient from './jsonServerClient';
 
 const App = () => (
-  <Admin authClient={authClient} dashboard={Dashboard} restClient={myJsonServerClient('http://localhost:2333')}>
+  <Admin title="Live Backend Manager" authClient={authClient} dashboard={Dashboard} restClient={myJsonServerClient('http://localhost:2333')}>
     <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} remove={Delete} icon={PostIcon} />
   // ...
   </Admin>
