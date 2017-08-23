@@ -8,7 +8,7 @@ const PostFilter = (props) => (
 );
 
 export const PostList = (props) => (
-    <List {...props} filters={<PostFilter />}>
+    <List {...props} filters={<PostFilter />} title="测试数据">
         <Datagrid>
             <TextField source="id" />
             <TextField source="title" />
